@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -1px;
+}
+
+:root {
+    --dc-primary: #0282F9;
+    --dc-dark: #1C1C1C;
+    --dc-l-dark: #303030;
+    --dc-gray: #797979;
+    --dc-light: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin-inline: auto;
+}
+
+/*#region header*/
+.header-top {
+    background: var(--dc-primary);
+    color: var(--dc-light);
+
+    ul {
+        display: flex;
+        justify-content: end;
+
+        li {
+            text-transform: uppercase;
+            margin-left: 4rem;
+            font-size: .8rem;
+            padding-block: .1rem;
+        }
+    }
+}
+
+/*#endregion*/
+
+/*#region header-bottom*/
+.header-bottom {
+    background: var(--dc-light);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                text-transform: uppercase;
+                margin-left: 2.5rem;
+                font-weight: bold;
+                font-size: .9rem;
+                padding-block: 3rem;
+
+                a {
+                    color: var(--dc-dark);
+                }
+            }
+        }
+
+    }
+}
+
+.logo {
+    width: 80px;
+    aspect-ratio: 1;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/*#endregion*/
+
+/*#region main*/
+
+/*#endregion*/
+
+/*#region footer-top*/
+.footer-top {
+    background: var(--dc-primary);
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    li {
+        padding-block: 3rem;
+
+        .img-footer-top {
+            width: 55px;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            color: var(--dc-light);
+            font-size: .8rem;
+
+            span {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+/*#endregion*/
+
+/*#region footer-body*/
+.footer-body {
+
+    .container {
+        background: url("../images/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+        padding-block: 3rem;
+    }
+
+    background: url("../images/footer-bg.jpg");
+    background-size: cover;
+
+    .row {
+        display: flex;
+
+        .col {
+            margin-right: 2rem;
+
+            ul {
+                margin-bottom: 1rem;
+
+                h3 {
+                    margin-bottom: 1rem;
+                    color: var(--dc-light);
+                    text-transform: uppercase;
+                }
+
+                li {
+                    a {
+                        color: var(--dc-gray);
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        color: var(--dc-gray);
+    }
+
+}
+
+/*#endregion*/
+
+/*#region footer-bottom*/
+.footer-bottom {
+    background: var(--dc-l-dark);
+    padding-block: 2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sign-up {
+            color: var(--dc-light);
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: .75rem;
+            border: 1px solid var(--dc-primary);
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: var(--dc-primary);
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+
+            ul {
+                display: flex;
+
+                img {
+                    width: 35px;
+                    aspect-ratio: 1;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/*#endregion*/
