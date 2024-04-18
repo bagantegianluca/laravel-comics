@@ -1,3 +1,4 @@
+/*#region common*/
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,8 @@ img {
     width: 70%;
     margin-inline: auto;
 }
+
+/*#endregion*/
 
 /*#region header*/
 .header-top {
@@ -83,11 +86,48 @@ img {
     height: 400px;
     object-fit: cover;
     object-position: top;
+    display: block;
 }
 
 /*#endregion*/
 
 /*#region main*/
+
+main {
+    background: var(--dc-dark);
+}
+
+.title {
+    background: var(--dc-primary);
+    color: var(--dc-light);
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .5rem 1rem;
+    transform: translateY(-50%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -1rem;
+
+    .col {
+        padding: 1rem;
+        width: calc(100% / 6);
+        color: var(--dc-light);
+        text-transform: uppercase;
+
+        .card {
+
+            img {
+                width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+}
 
 /*#endregion*/
 
@@ -116,6 +156,7 @@ img {
             align-items: center;
             color: var(--dc-light);
             font-size: .8rem;
+            text-transform: uppercase;
 
             span {
                 margin-left: 1rem;

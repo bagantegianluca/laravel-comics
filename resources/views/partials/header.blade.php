@@ -12,15 +12,15 @@
         <div class="container">
           <img class="logo" src="{{ Vite::asset('resources/images/dc-logo.png') }}">
           <ul>
-            <li><a href="">Characters</a></li>
-            <li><a href="">Comics</a></li>
-            <li><a href="">Tv</a></li>
-            <li><a href="">Games</a></li>
-            <li><a href="">Collectibles</a></li>
-            <li><a href="">Video</a></li>
-            <li><a href="">Fans</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Shop</a></li>
+            <li><a href="{{route('characters')}}" class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}">Characters</a></li>
+            <li><a href="{{route('comics')}}" class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}">Comics</a></li>
+            <li><a href="{{route('tv')}}" class="{{Route::currentRouteName() === 'tv' ? 'active' : ''}}">Tv</a></li>
+            <li><a href="{{route('games')}}" class="{{Route::currentRouteName() === 'games' ? 'active' : ''}}">Games</a></li>
+            <li><a href="{{route('collectibles')}}" class="{{Route::currentRouteName() === 'collectibles' ? 'active' : ''}}">Collectibles</a></li>
+            <li><a href="{{route('videos')}}" class="{{Route::currentRouteName() === 'videos' ? 'active' : ''}}">Video</a></li>
+            <li><a href="{{route('fans')}}" class="{{Route::currentRouteName() === 'fans' ? 'active' : ''}}">Fans</a></li>
+            <li><a href="{{route('news')}}" class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}">News</a></li>
+            <li><a href="{{route('shop')}}" class="{{Route::currentRouteName() === 'shop' ? 'active' : ''}}">Shop</a></li>
           </ul>
           <div class="search">Search</div>
         </div>
