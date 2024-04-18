@@ -69,7 +69,13 @@ img {
 
                 a {
                     color: var(--dc-dark);
+                    height: 100%;
                 }
+
+                .active {
+                    border-bottom: 3px solid var(--dc-primary);
+                }
+
             }
         }
 
@@ -95,6 +101,7 @@ img {
 
 main {
     background: var(--dc-dark);
+    padding-bottom: 1rem;
 }
 
 .title {
@@ -104,6 +111,10 @@ main {
     display: inline-block;
     padding: .5rem 1rem;
     transform: translateY(-50%);
+}
+
+.content {
+    color: var(--dc-light);
 }
 
 .row {

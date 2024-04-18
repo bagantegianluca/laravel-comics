@@ -134,6 +134,8 @@ Route::get('/comics', function () {
         ]
     ];
 
+    // dd($comics);
+
     return view('comics', compact('comics'));
 })->name('comics');
 
